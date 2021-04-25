@@ -11,6 +11,7 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
+  background-color:rgb(34, 34, 34);
   
 }
 
@@ -21,10 +22,12 @@ body {
 
 .text {
   text-transform: uppercase;
+  color: #e8e8e8;
 }
 
 .nav-btn {
   border: none;
+  color: #e8e8e8;
   background-color: transparent;
   cursor: pointer;
   font-size: 20px;
@@ -54,11 +57,17 @@ body {
   width: 60%;
   max-width: 480px;
   min-width: 320px;
+  transition-delay: 0s;
 }
 
 .nav-green {
   background-color: rgb(153, 204, 51);
   width: 95%;
+  transition-delay: 0s;
+}
+
+.nav-green.visible {
+  transition-delay: .2s;
 }
 
 .nav-white {
@@ -66,9 +75,15 @@ body {
   width: 95%;
   padding: 40px;
   position: relative;
+  transition-delay: 0s;
+}
+
+.nav-white.visible {
+  transition-delay: .4s;
 }
 
 .close-btn {
+  color: #222222;
   opacity: 0.3;
   position: absolute;
   top: 40px;
